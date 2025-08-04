@@ -78,10 +78,10 @@ EOF"
 # --- Main Execution ---
 
 # Setup csvboxer app
-setup_flask_app "$APP_CSV_DIR" "csvboxer" "$APP_CSV_PORT" "$APP_CSV_SERVICE_NAME" "csvboxer.py" "csvboxer_app_instance"
+setup_flask_app "$APP_CSV_DIR" "csvboxer" "$APP_CSV_PORT" "$APP_CSV_SERVICE_NAME" "csvboxer.py" "app"
 
 # Setup filer app
-setup_flask_app "$APP_FILER_DIR" "filer" "$APP_FILER_PORT" "$APP_FILER_SERVICE_NAME" "filer.py" "filer_app_instance"
+setup_flask_app "$APP_FILER_DIR" "filer" "$APP_FILER_PORT" "$APP_FILER_SERVICE_NAME" "/src/file_service.py" "app"
 
 echo "----------------------------------------"
 echo "Reloading systemd daemon..."
