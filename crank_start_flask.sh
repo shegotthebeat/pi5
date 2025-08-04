@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # --- Configuration ---
-APP_CSV_DIR="/home/hookworm/app-csv/csvboxer"
-APP_FILER_DIR="/home/hookworm/app-filer/filer"
+APP_CSV_DIR="/home/hookworm/app-csv/csvboxer/app-csv/csvboxer"
+APP_FILER_DIR="/home/hookworm/app-filer/filer/app-filer/filer"
 APP_CSV_SERVICE_NAME="flask-csvboxer.service"
 APP_FILER_SERVICE_NAME="flask-filer.service"
 APP_CSV_PORT=5000
