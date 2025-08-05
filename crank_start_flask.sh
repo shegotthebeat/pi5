@@ -3,6 +3,7 @@
 echo "Starting csvboxer app..."
 cd /home/hookworm/app-csv
 source venv/bin/activate
+pip install requirements.txt
 export FLASK_APP=csvboxer.py
 flask run --host=0.0.0.0 --port=5000 &
 deactivate
@@ -10,6 +11,7 @@ deactivate
 echo "Starting filer app..."
 cd /home/hookworm/app-filer
 source venv/bin/activate
+pip install requirements.txt
 export FLASK_APP=filer.py
 flask run --host=0.0.0.0 --port=5001 &
 deactivate
