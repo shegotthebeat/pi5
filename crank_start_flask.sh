@@ -21,7 +21,7 @@ if [ -f "requirements.txt" ]; then
 fi
 
 # Set FLASK_APP and run the app in the background
-export FLASK_APP=app.py
+export FLASK_APP=csvboxer.py
 echo "Starting csvboxer app on port 5000..."
 flask run --host=0.0.0.0 --port=5000 &
 
@@ -49,7 +49,7 @@ if [ -f "requirements.txt" ]; then
 fi
 
 # Set FLASK_APP and run the app in the background
-export FLASK_APP=app.py
+export FLASK_APP=filer.py
 echo "Starting filer app on port 5001..."
 flask run --host=0.0.0.0 --port=5001 &
 
