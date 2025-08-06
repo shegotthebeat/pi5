@@ -9,7 +9,7 @@ This guide outlines the full recovery process to restore your Raspberry Pi 5 ser
 
 ---
 
-## 1. Flash OS and Configure Network
+## 1. Flash OS onto SD card
 
 Use **Raspberry Pi Imager** to install:
 
@@ -31,7 +31,11 @@ Use **Raspberry Pi Imager** to install:
 
 ---
 
-## 3. SSH into Your Pi
+## 3. SSH into Pi
+
+```bash
+ssh user@pi_hostname_or_ip
+```
 
 ---
 
@@ -61,7 +65,9 @@ Two scenarios:
 * Existing tunnel: Select tunnel > Click “Edit” > Follow steps to install package, authenticate with token, and configure as a service.
 * New tunnel: Create it > Define public hostnames/subdomains > Follow the auto-generated instructions.
 
-## 7. RUn Setup Scripts
+---
+
+## 7. Run Setup Scripts
 
 ```bash
 cd pi5
@@ -72,6 +78,7 @@ Then run the following to automatically detect and execute the .sh scripts in re
 ```bash
 ./run_setup.sh
 ```
+---
 
 ## 8. Configure WiFi Monitor
  
