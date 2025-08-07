@@ -12,16 +12,19 @@ network={
     ssid="AmberlyPlace_Staff"
     psk="AmberlyPlaceStaff"
     priority=10
+    bgscan="simple:30:-70:300"
 }
 network={
     ssid="RB"
     psk="Remygirl1738"
     priority=5
+    bgscan="simple:30:-70:300"
 }
 network={
     ssid="KeviniPhone"
     psk="KeviniPhone2025"
     priority=3
+    bgscan="simple:30:-70:300"
 }
 EOF'
 
