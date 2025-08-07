@@ -2,8 +2,8 @@
 
 # This script creates the wpa_supplicant.conf file with predefined Wi-Fi networks.
 
-echo "Creating /etc/wpa_supplicant/wpa_supplicant.conf..."
-sudo bash -c 'cat <<EOF > /etc/wpa_supplicant/wpa_supplicant.conf
+echo "Creating boot/wpa_supplicant.conf..."
+sudo bash -c 'cat <<EOF > boot/wpa_supplicant.conf
 ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
 update_config=1
 country=US
