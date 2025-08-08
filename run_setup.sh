@@ -17,3 +17,5 @@ for script in $(ls -1 *.sh | sort -r); do
 done
 
 echo "🎉 All setup scripts complete."
+
+```
